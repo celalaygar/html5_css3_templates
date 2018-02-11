@@ -1,0 +1,44 @@
+
+/*CONTENT*/
+#h1name{ font-family: 'Anton', sans-serif;}
+#h1name, #h2contact{
+	color:#fff;
+	text-align:center;	
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition:    all 0.5s ease;
+	-o-transition:      all 0.5s ease;
+	-ms-transition:     all 0.5s ease;
+	transition:         all 0.5s ease;	
+}
+
+#h1name{font-size:36px;}
+#h2contact{
+	font-size:16px;	
+	margin:15px 0 0px; 
+	color:#97a5b5; 
+	font-family:Arial, sans-serif;	
+}
+
+
+
+/*scale down*/
+#h1name, #h2contact{
+	-moz-transform: scale(0);
+	-webkit-transform:  scale(0);
+	-o-transform:  scale(0);
+	-ms-transform: scale(0);
+	transform:  scale(0);
+	opacity:0;
+}
+
+/*animation active*/
+#h1name.animationActive, #h2contact.animationActive {
+	-moz-transform: scale(1);
+	-webkit-transform:  scale(1);
+	-o-transform:  scale(1);
+	-ms-transform: scale(1);
+	transform:  scale(1);
+	opacity:1;
+}
+

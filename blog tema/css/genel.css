@@ -1,0 +1,81 @@
+ 	body{
+ 		background: #2c3e50 !important; 
+ 		color: black
+ 	}
+ 	#menu{
+ 		background: #273750 !important; 
+ 	}
+ 	#toggle-menu{
+ 		color: white
+ 	}
+	.modal-lg {
+	    max-width: 90% !important;
+	}
+	#namelogo{
+		background: #2c3e50; height: 210px; padding: 80px 0 10px 0 ;
+	}
+
+	#h1name{
+		font-size: 25px !important;
+	}
+	.nav-item{
+		padding: 0 5px;
+	}
+	.navbar{
+		background-color: #e3f2fd;
+		border-radius: 15px 15px 0 0 ;
+	}
+	.progress{
+		margin: 2px;
+	}		
+	.footer-row>a{
+		color:black;
+		padding: 3px;
+		margin: 0 3px;
+	}
+	.footer-row{
+		border-radius: 0 0 15px 15px;
+		margin-top: 1px;
+		background: #eeeeee;
+	}
+	.yetenek-row{
+		margin: 3px auto;
+	}
+	.yetenek-derecesi{
+		margin: 0 5px;
+	}
+	
+	.biyografi{
+		width: 60%;
+		padding: 5px 10px;
+		background: #fdeeda;
+	}
+	.biyografi-metin{
+		text-align:justify;
+	}
+	.yetenekler{
+		width: 40%; 
+		padding: 5px 10px;
+		background: #fdeeca	;
+	}
+	.biyografi>span{
+		height: 33px; 
+		font-size: 20px;
+	}
+	.yetenekler>span{
+		height: 33px; 
+		font-size: 20px;
+	}
+	@media screen and (max-width:768px) {
+			.row>.biyografi{
+			float: none !important;
+			color: darkblue;
+			margin: 2px  0 ;
+			width: 100% !important;
+		}
+		.row>.yetenekler{
+			float: none !important;
+			margin: 2px  0 ;
+			width: 100%  !important;
+		}
+	}
