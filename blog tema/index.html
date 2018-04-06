@@ -6,18 +6,25 @@
 	<title>Responsive Menu | FlexBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="css/genel.css">
-  <link rel="stylesheet" href="css/name.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/genel.css">
+	<link rel="stylesheet" href="css/name.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="css/style.css">
 
-  
+    <style type="text/css">
+        #top {
+            bottom: 20px;
+            display: none;
+            position: fixed;
+            right: 20px;
+        }
+    </style>  
 </head>
 
 <body style="background: #2c3e50 !important; color: black">
@@ -230,7 +237,8 @@
 						</div>
 	                </div>
 	              </div>
-	            </div>
+				</div>
+
   		</div>
 
   	</div>
@@ -242,18 +250,34 @@
 			| <a href="" target="_blank"><span ><i class="fa fa-instagram" aria-hidden="true"></i> İnstagram </span></a>
   		</div>
   	</div>
+	<div class="container">
+		<div id="top">
+			<i class="fa fa-arrow-circle-up fa-3x"></i>
+		</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script  src="js/index.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-  
+	<script  src="js/name.js"></script>
 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script  src="js/name.js"></script>
-
+	<script type="text/javascript">
+		$(function () {
+			$("#top").click(function () {
+			// Sayfamızı kaydıracak olan kod burasıdır.
+			$("html,body").stop().animate({ scrollTop: "0" }, 700);
+			});
+		});
+		$(window).scroll(function () {
+			var uzunluk = $(document).scrollTop();
+			if (uzunluk > 20) $("#top").fadeIn(500);
+			else { $("#top").fadeOut(500); }
+		});
+	</script>
 
 </body>
 
